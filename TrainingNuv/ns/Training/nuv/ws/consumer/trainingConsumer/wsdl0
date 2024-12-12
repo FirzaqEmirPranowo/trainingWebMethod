@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="training" targetNamespace="http://MSI/Training.ws.provider:training" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soapjms="http://www.w3.org/2010/soapjms/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://MSI/Training.ws.provider:training" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://MSI/Training.ws.provider:training" xmlns:tns="http://MSI/Training.ws.provider:training" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+          <xsd:element name="branch" type="tns:branch"/>
+          <xsd:element name="branchResponse" type="tns:branchResponse"/>
+          <xsd:element name="branch2" type="tns:branch2"/>
+          <xsd:element name="branch2Response" type="tns:branch2Response"/>
+          <xsd:element name="request" type="tns:request"/>
+          <xsd:element name="loopResponse" type="tns:loopResponse"/>
+          <xsd:complexType name="branch">
+            <xsd:sequence>
+              <xsd:element name="currency" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="branchResponse">
+            <xsd:sequence>
+              <xsd:element name="message" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="branch2">
+            <xsd:sequence>
+              <xsd:element name="currency" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="branch2Response">
+            <xsd:sequence>
+              <xsd:element name="message" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="request">
+            <xsd:sequence>
+              <xsd:element name="customer" nillable="true" type="tns:customer"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="customer">
+            <xsd:sequence>
+              <xsd:element maxOccurs="unbounded" name="listTagihan" nillable="true" type="tns:listTagihan"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="listTagihan">
+            <xsd:sequence>
+              <xsd:element name="noTagihan" nillable="true" type="xsd:string"/>
+              <xsd:element name="noRekCustomer" nillable="true" type="xsd:string"/>
+              <xsd:element name="amount" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+          <xsd:complexType name="loopResponse">
+            <xsd:sequence>
+              <xsd:element name="totalTagihan" nillable="true" type="xsd:string"/>
+            </xsd:sequence>
+          </xsd:complexType>
+        	</xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="training_PortType_branchResponse">
+    <wsdl:part name="parameters" element="tns:branchResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="training_PortType_branch2">
+    <wsdl:part name="parameters" element="tns:branch2">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="training_PortType_loopResponse">
+    <wsdl:part name="parameters" element="tns:loopResponse">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="training_PortType_branch2Response">
+    <wsdl:part name="parameters" element="tns:branch2Response">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="training_PortType_request">
+    <wsdl:part name="parameters" element="tns:request">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:message name="training_PortType_branch">
+    <wsdl:part name="parameters" element="tns:branch">
+    </wsdl:part>
+  </wsdl:message>
+  <wsdl:portType name="training_PortType">
+    <wsdl:operation name="loop">
+      <wsdl:input message="tns:training_PortType_request">
+    </wsdl:input>
+      <wsdl:output message="tns:training_PortType_loopResponse">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="branch2">
+      <wsdl:input message="tns:training_PortType_branch2">
+    </wsdl:input>
+      <wsdl:output message="tns:training_PortType_branch2Response">
+    </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="branch">
+      <wsdl:input message="tns:training_PortType_branch">
+    </wsdl:input>
+      <wsdl:output message="tns:training_PortType_branchResponse">
+    </wsdl:output>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Training_ws_provider_training_Binder" type="tns:training_PortType">
+    <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <wsdl:operation name="loop">
+      <soap:operation soapAction="Training_ws_provider_training_Binder_loop" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="branch2">
+      <soap:operation soapAction="Training_ws_provider_training_Binder_branch2" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="branch">
+      <soap:operation soapAction="Training_ws_provider_training_Binder_branch" style="document"/>
+      <wsdl:input>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body parts="parameters" use="literal"/>
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Training.ws.provider.training">
+    <wsdl:port name="Training_ws_provider_training_Port" binding="tns:Training_ws_provider_training_Binder">
+      <soap:address location="http://LAPTOP-KO4VN62D:5555/ws/Training.ws.provider:training/Training_ws_provider_training_Port"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

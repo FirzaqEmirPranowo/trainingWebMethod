@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">formatPerusahaan</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">Ly8gcGlwZWxpbmUNCklEYXRhQ3Vyc29yIHBpcGVsaW5lQ3Vyc29yID0gcGlwZWxpbmUuZ2V0Q3Vy
+c29yKCk7DQoJU3RyaW5nCW5hbWFQZXJ1c2FoYWFuID0gSURhdGFVdGlsLmdldFN0cmluZyggcGlw
+ZWxpbmVDdXJzb3IsICJuYW1hUGVydXNhaGFhbiIgKTsNCglTdHJpbmcJc3RhdHVzUGVydXNhaGFh
+biA9IElEYXRhVXRpbC5nZXRTdHJpbmcoIHBpcGVsaW5lQ3Vyc29yLCAic3RhdHVzUGVydXNhaGFh
+biIgKTsNCnBpcGVsaW5lQ3Vyc29yLmRlc3Ryb3koKTsNCg0KDQppZiAobmFtYVBlcnVzYWhhYW4u
+c3RhcnRzV2l0aCgiUFQuIikgJiYgIlRlcmJ1a2EiLmVxdWFscyhzdGF0dXNQZXJ1c2FoYWFuKSkg
+eyANCgluYW1hUGVydXNhaGFhbiA9IG5hbWFQZXJ1c2FoYWFuLnRvVXBwZXJDYXNlKCkuY29uY2F0
+KCIgVGJrLiIpOyANCgl9IA0KDQoNCi8vIHBpcGVsaW5lDQpJRGF0YUN1cnNvciBwaXBlbGluZUN1
+cnNvcl8xID0gcGlwZWxpbmUuZ2V0Q3Vyc29yKCk7DQpJRGF0YVV0aWwucHV0KCBwaXBlbGluZUN1
+cnNvcl8xLCAibmFtYVBlcnVzYWhhYW4iLCBuYW1hUGVydXNhaGFhbiApOw0KcGlwZWxpbmVDdXJz
+b3JfMS5kZXN0cm95KCk7</value>
+</Values>

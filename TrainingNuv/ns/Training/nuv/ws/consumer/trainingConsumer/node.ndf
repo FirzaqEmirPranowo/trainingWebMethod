@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="node_type">webServiceDescriptor</value>
+  <value name="node_subtype">unknown</value>
+  <value name="node_nsName">Training.nuv.ws.consumer:trainingConsumer</value>
+  <value name="node_pkg">TrainingNuv</value>
+  <value name="is_public">false</value>
+  <Boolean name="inbound">false</Boolean>
+  <Boolean name="WSICompliant">false</Boolean>
+  <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+  <value name="targetNamespace">http://MSI/Training.ws.provider:training</value>
+  <Boolean name="attachmentEnabled">false</Boolean>
+  <number name="mtomThreshold" type="Integer">0</number>
+  <array name="externalWSDLSources" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="contextURI">http://localhost:5555/</value>
+      <value name="locationURI">Training.nuv.ws.consumer.trainingConsumer?wsdl=wsdl0</value>
+      <null name="source"/>
+      <number name="type" type="Integer">1</number>
+    </record>
+  </array>
+  <value name="externalWSDLURL">http://192.168.100.135:5555/ws/Training.ws.provider:training?WSDL</value>
+  <value name="WSDLURL">http://LAPTOP-RABM8UE4:5555/ws/Training.nuv.ws.consumer:trainingConsumer?WSDL</value>
+  <value name="definitionName">training</value>
+  <value name="version">V_10_15</value>
+  <value name="schemaDomain">7dad313ea2fa4e5eae3c9b9951063ace</value>
+  <Boolean name="rawArray">true</Boolean>
+  <array name="handlerList" type="record" depth="1">
+  </array>
+  <array name="binderList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="binderName">Training_ws_provider_training_Binder</value>
+      <value name="portAddress">http://LAPTOP-KO4VN62D:5555/ws/Training.ws.provider:training/Training_ws_provider_training_Port</value>
+      <value name="bindingName">Training_ws_provider_training_Binder</value>
+      <value name="bindingStyle">document</value>
+      <value name="bindingUse">literal</value>
+      <value name="bindingType">SOAP</value>
+      <value name="portName">Training_ws_provider_training_Port</value>
+      <value name="portTypeName">training_PortType</value>
+      <value name="bindingTransport">http://schemas.xmlsoap.org/soap/http</value>
+      <value name="transportType">http</value>
+      <record name="operationMap" javaclass="com.wm.util.Values">
+        <value name="Training_ws_provider_training_Binder_loop">loop</value>
+        <value name="Training_ws_provider_training_Binder_branch2">branch2</value>
+        <value name="Training_ws_provider_training_Binder_branch">branch</value>
+      </record>
+      <value name="SOAPProtocol">SOAP 1.1 Protocol</value>
+      <value name="SOAPDirective">ws</value>
+      <Boolean name="useCSQ">false</Boolean>
+    </record>
+  </array>
+  <array name="operationList" type="record" depth="1">
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">loop</value>
+      <value name="serviceName">Training.nuv.ws.consumer.trainingConsumer_.connectors:training_PortType_loop</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://MSI/Training.ws.provider:training:training_PortType_loop_Input</value>
+          <value name="docType">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_loop_Input</value>
+          <value name="nsOwner">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_loop_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://MSI/Training.ws.provider:training:training_PortType_loop_Output</value>
+          <value name="docType">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_loop_Output</value>
+          <value name="nsOwner">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_loop_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">branch2</value>
+      <value name="serviceName">Training.nuv.ws.consumer.trainingConsumer_.connectors:training_PortType_branch2</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://MSI/Training.ws.provider:training:training_PortType_branch2_Input</value>
+          <value name="docType">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_branch2_Input</value>
+          <value name="nsOwner">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_branch2_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://MSI/Training.ws.provider:training:training_PortType_branch2_Output</value>
+          <value name="docType">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_branch2_Output</value>
+          <value name="nsOwner">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_branch2_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+    <record javaclass="com.wm.util.Values">
+      <value name="operationName">branch</value>
+      <value name="serviceName">Training.nuv.ws.consumer.trainingConsumer_.connectors:training_PortType_branch</value>
+      <value name="originalMEPType">MEP_URI_IN_OUT</value>
+      <record name="requestElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://MSI/Training.ws.provider:training:training_PortType_branch_Input</value>
+          <value name="docType">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_branch_Input</value>
+          <value name="nsOwner">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_branch_Input</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+      <record name="responseElement" javaclass="com.wm.util.Values">
+        <array name="headers" type="record" depth="1">
+        </array>
+        <record name="body" javaclass="com.wm.util.Values">
+          <value name="name">http://MSI/Training.ws.provider:training:training_PortType_branch_Output</value>
+          <value name="docType">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_branch_Output</value>
+          <value name="nsOwner">Training.nuv.ws.consumer.trainingConsumer_.docTypes:training_PortType_branch_Output</value>
+          <number name="nsOwnerType" type="Integer">3</number>
+          <Boolean name="addedByClient">false</Boolean>
+          <null name="originalDocName"/>
+        </record>
+        <array name="faults" type="record" depth="1">
+        </array>
+      </record>
+    </record>
+  </array>
+  <record name="namespaces" javaclass="com.wm.util.Values">
+    <value name="wsdl">http://schemas.xmlsoap.org/wsdl/</value>
+    <value name="soapjms">http://www.w3.org/2010/soapjms/</value>
+    <value name="mime">http://schemas.xmlsoap.org/wsdl/mime/</value>
+    <value name="tns">http://MSI/Training.ws.provider:training</value>
+    <value name="xsd">http://www.w3.org/2001/XMLSchema</value>
+    <value name="http">http://schemas.xmlsoap.org/wsdl/http/</value>
+    <value name="soap12">http://schemas.xmlsoap.org/wsdl/soap12/</value>
+    <value name="soap">http://schemas.xmlsoap.org/wsdl/soap/</value>
+    <value name="soapenc">http://schemas.xmlsoap.org/soap/encoding/</value>
+  </record>
+  <Boolean name="HeadersInPipelineEnabled">false</Boolean>
+  <Boolean name="validateSOAPResponse">true</Boolean>
+  <Boolean name="validateSchemaUsingXerces">true</Boolean>
+  <Boolean name="enableCompatibility">false</Boolean>
+  <Boolean name="omitXSDAny">true</Boolean>
+  <record name="userDefinedURIReferencePrefixes" javaclass="com.wm.util.Values">
+    <value name="http://MSI/Training.ws.provider:training">tns</value>
+  </record>
+  <Boolean name="registerDoctypes">true</Boolean>
+  <Boolean name="allTypes">false</Boolean>
+  <Boolean name="generateXOPObjectForBase64Binary">false</Boolean>
+  <value name="originURI">http://192.168.100.135:5555/ws/Training.ws.provider:training?WSDL</value>
+  <value name="modifiable">false</value>
+  <value name="externalServiceName">{http://MSI/Training.ws.provider:training}Training.ws.provider.training</value>
+  <null name="policyAttachmentList"/>
+  <Boolean name="filterLoginCredentials">false</Boolean>
+</Values>

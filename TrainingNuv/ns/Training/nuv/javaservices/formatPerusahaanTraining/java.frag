@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Values version="2.0">
+  <value name="name">formatPerusahaanTraining</value>
+  <value name="encodeutf8">true</value>
+  <value name="body">SURhdGFNYXAgaWRtID0gbmV3IElEYXRhTWFwKHBpcGVsaW5lKTsNCi8vCQlnZXQgaW5wdXQgdmFs
+dWUNClN0cmluZwluYW1hUGVydXNhaGFhbiA9aWRtLmdldEFzTm9uRW1wdHlTdHJpbmcoIm5hbWFQ
+ZXJ1c2FoYWFuIik7DQpTdHJpbmcJc3RhdHVzUGVydXNhaGFhbiA9IGlkbS5nZXRBc05vbkVtcHR5
+U3RyaW5nKCJzdGF0dXNQZXJ1c2FoYWFuIiApOw0KaWYgKG5hbWFQZXJ1c2FoYWFuLnN0YXJ0c1dp
+dGgoIlBULiIpICYmICJUZXJidWthIi5lcXVhbHMoc3RhdHVzUGVydXNhaGFhbikpIHsgDQoJbmFt
+YVBlcnVzYWhhYW4gPSBuYW1hUGVydXNhaGFhbi50b1VwcGVyQ2FzZSgpLmNvbmNhdCgiIFRiayAg
+YmFueWFray4iKTsgDQoJfSANCi8vCQlkZWZpbmUgb3V0cHV0IHZhbHVlDQppZG0ucHV0KCJuYW1h
+Q29tcGFueSIsIG5hbWFQZXJ1c2FoYWFuKTs=</value>
+</Values>
